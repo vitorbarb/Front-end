@@ -23,4 +23,25 @@ escreval("Qual o seu email")
 leia(email)
 limpatela()
 
+escreval("Cadastro efetuado com sucesso!")
+escreval("******************")
+escreval("Usuario: ", nome)
+escreval("Idade: ", idade)
+escreval("Email: ", email)
+escreval("******************")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Fimalgoritmo
