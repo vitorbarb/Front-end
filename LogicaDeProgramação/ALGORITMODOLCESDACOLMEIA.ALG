@@ -1,56 +1,76 @@
 Algoritmo "algoritmoDolcesDaColmeia"
- //quilo
- //unidade
- //quantidadee
+
+ 
+ 
+ 
+ 
+
+ 
 Var
+//variaveis
 opcao : caractere
 valorTotal : real
 quantidade : inteiro
 carrinho: caractere
+nomeDoProduto: caractere
 
 
+
+
+
+
+//comecço da função
+procedimento adicionarAoCarrinho(valorDoProduto : real)
+INICIO
+
+   escreval("Quantas unidades de",nomeDoProduto, "voce deseja comprar? ")
+   leia(quantidade)
+   se quantidade > 0 entao
+   escreval("Itens adcionados")
+   senao
+   valorTotal <- valorTotal + valorDoProduto * quantidade
+   fimSe
+    escreval("Subtotal: ", valorTotal)
+
+
+fimProcedimento
+
+
+
+
+
+//COMEÇO DO PROGRAMA
 Inicio
 escreval("********************catalgo********************")
 escreval("*1 - TRUFA -----------------------R$ 8,00")
-escreval("*2 - BPOLO DE POTE ---------------R$ 10,00")
-escreval("*3 - COPO DA VELOCIDADE---------- R$ 15,00 ")
+escreval("*2 - BOLO DE POTE ---------------R$ 10,00")
+escreval("*3 - COPO DA VELOCIDADE---------- R$ 15,00")
 escreval("*4 - DOCINHO----------------------R$ 3,00")
 escreval("*5 - PUDIM------------------------R$ 25,00")
 escreval("*6 - CANCELAR")
 escreval("*7 - CARRINHO")
- leia(opcao)
+escreval("***********************************************")
+escreval("")
+escreval("Digite qual produto deseja comprar")
+leia(opcao)
+ 
 escolha (opcao)
-   caso "1"
-   escreval("Quantas TRUFAS voce deseja comprar? ")
-   leia(quantidade)
-   escreval("Item TRUFA adicionado")
-   valorTotal <- valorTotal +8* quantidade
-    escreval("Subtotal: ", valorTotal)
+   [caso "1"
+   nomeDoProduto <- " TRUFA "
+   adicionarAoCarrinho(8)
     
     
     caso "2"
-   escreval("Item BOLO DE POTE adicionado")
-   leia(quantidade)
-   valorTotal <- valorTotal +  10* quantidade
-    escreval("Subtotal: ", valorTotal)
-    
+   adicionarAoCarrinho(10)
+   
    caso "3"
-   escreval("Item COPO DA FELICIDADE adicionado")
-   leia(quantidade)
-   valorTotal <- valorTotal +  15* quantidade
-   escreval("Subtotal: ", valorTotal)
+   adicionarAoCarrinho(15)
    
    caso "4"
-   escreval("Item DOCINHO adicionado")
-   leia(quantidade)
-   valorTotal <- valorTotal + 3* quantidade
-   escreval("Subtotal: ", valorTotal)
+  adicionarAoCarrinho(3)
    
    caso "5"
-   escreval("Item PUDIM adicionado")
-   leia(quantidade)
-   valorTotal <- valorTotal + 25* quantidade
-   escreval("Subtotal: ", valorTotal)
+   adicionarAoCarrinho(25)
    
    caso "6"
    escreval("Compra cancelada")
@@ -65,3 +85,4 @@ fimEscolha
 
 
 Fimalgoritmo
+
