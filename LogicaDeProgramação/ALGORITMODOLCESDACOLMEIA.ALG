@@ -9,11 +9,12 @@ Algoritmo "algoritmoDolcesDaColmeia"
 Var
 //variaveis
 opcao : caractere
-valorTotal : real
+valorDoProduto : real
+ValorTotal: real
 quantidade : inteiro
 carrinho: caractere
 nomeDoProduto: caractere
-
+finalizarCarrinho: caractere
 
 
 
@@ -25,10 +26,11 @@ INICIO
 
    escreval("Quantas unidades de",nomeDoProduto, "voce deseja comprar? ")
    leia(quantidade)
-   se quantidade > 0 entao
+   se quantidade = 0 entao
    escreval("Itens adcionados")
    senao
-   valorTotal <- valorTotal + valorDoProduto * quantidade
+   valorDoProduto <- valorDoProduto * quantidade
+   valorTotal <- valorTotal + valorDoProduto
    fimSe
     escreval("Subtotal: ", valorTotal)
 
@@ -41,6 +43,8 @@ fimProcedimento
 
 //COMEÇO DO PROGRAMA
 Inicio
+finalizarCarrinho <- "n"
+enquanto (finalizarCarrinho = "n")  faca
 escreval("********************catalgo********************")
 escreval("*1 - TRUFA -----------------------R$ 8,00")
 escreval("*2 - BOLO DE POTE ---------------R$ 10,00")
@@ -52,10 +56,11 @@ escreval("*7 - CARRINHO")
 escreval("***********************************************")
 escreval("")
 escreval("Digite qual produto deseja comprar")
+
 leia(opcao)
- 
+ limpatela
 escolha (opcao)
-   [caso "1"
+   caso "1"
    nomeDoProduto <- " TRUFA "
    adicionarAoCarrinho(8)
     
@@ -80,8 +85,12 @@ escolha (opcao)
    outrocaso
    escreval("Opção invalisda")
 
-
 fimEscolha
+
+escreval ("Deseja finalizar a compra s/n" )
+leia(finalizarCarrinho)
+
+fimenquanto
 
 
 Fimalgoritmo
