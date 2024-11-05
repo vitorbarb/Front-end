@@ -1,0 +1,29 @@
+.categoria{
+    font-size:40px ;
+    background-color: rgb(254, 255, 199);
+    font-family:"Oswald", sans-serif;
+}
+
+
+.conteudo{
+    font-size: 14px;
+    font-family: "Oswald", sans-serif;
+}
+
+
+div{
+    position:absolute;
+    top: 5%;
+    left: 20%;
+    right: 20%;
+    
+}
+
+img{
+    width: 30%;
+    border-radius: 10%; 
+}
+
+.alinhar{
+    width: 100%;
+}
