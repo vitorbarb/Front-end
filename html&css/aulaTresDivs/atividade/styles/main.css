@@ -1,0 +1,23 @@
+div{
+    background-color: #fac600;
+    height: 80px;
+    width: 100%;
+    margin: 0%;
+    line-height: 2;
+    display: flex;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+img{
+  
+    
+}
+
+#titulo{
+   margin-left: 20px;
+   margin-top: 4px;
+}
