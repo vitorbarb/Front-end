@@ -1,9 +1,8 @@
-div{
+header{
     background-color: #fac600;
-    height: 80px;
+    padding: 20px 0px;
     width: 100%;
     margin: 0%;
-    line-height: 2;
     display: flex;
 }
 
@@ -13,11 +12,36 @@ div{
 }
 
 img{
-  
-    
+  width: 3%;
 }
 
 #titulo{
    margin-left: 20px;
    margin-top: 4px;
 }
+
+#donuts{
+  position: absolute;
+  background-color: #fac600;
+  width: 20px;
+  height: 80px;
+  
+
+}
+
+#bolo{
+    position: absolute;
+  background-color: #fac600;
+  width: 20px;
+  height: 80px;
+  padding: 30px 40px;
+}
+
+#brownie{
+    position: absolute;
+  background-color: #fac600;
+  width: 20px;
+  height: 80px;
+  padding: 30px 60px;
+    
+} */
