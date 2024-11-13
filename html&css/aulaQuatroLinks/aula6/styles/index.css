@@ -1,0 +1,47 @@
+*{
+    margin: 0%;
+    padding:0%;
+    font-family: "VT323", monospace;
+}
+@font-face {
+    font-family: SASAGEYO;
+    src: url(../fonts/silvus/silvus__.ttf);
+}
+
+H1{
+    font-family: SASAGEYO, arial;
+}
+
+.caixa{
+    width: 200px;
+    height: 200px;
+    margin: 10px ;
+    border-radius: 10px;
+}
+
+#caixa1{
+    background-color: red;
+    transition: 1s;
+}
+
+#caixa2{
+    background-color: blue;
+    transition: 1s;
+     
+}
+
+#caixa3{
+    background-color: rgb(222, 227, 238);
+}
+
+#caixa1:hover{
+ border-radius: 100%;
+ transition: 1s;
+}
+
+#caixa2:active{
+    width:100%;
+    background-color: rgba(0, 0, 255, 0.089) ;
+    transition: 5s;
+
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=VT323&display=swap" rel="stylesheet">
+<body>
+    <main>
+        <h1>formulario</h1>
+        
+        <form action="#">
+            <div id="principal">
+            <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input required placeholder="Nome" type="text" id="nome">
+        </div>
+
+
+            <div class="form-group">
+            <label for="email">Email:</label>
+            <input required placeholder="user@aluno.unb" type="email" name="" id="email">
+        </div>
+
+                
+
+
+
+            <div class="form-group">
+             <label for="senha">Senha:</label>
+            <input required type="password" name="" id="senha">
+        </div>
+
+
+
+            <div class="form-group">
+            <label for="data">Data:</label>
+            <input type="date" name="" id="data">
+        </div>
+
+            
+            
+            
+            <div class="form-group">
+            <label for="art">Artista do seculo:</label>
+            <select name="" id="art">
+                <option value=""> Bjork</option>
+                <option value=""> ARca</option>
+                <option value=""> Rosalia</option>
+                <option value=""> Tobyfox</option>
+                <option value=""> Aphex Twink</option>
+                <option value=""> Fka twinks</option>
+                <option value=""> Rachaminoff (ewww) </option>
+                <option value=""> Felanie</option>
+               
+            </select>
+
+            <label for="cor">Cor Favorita:</label>
+            <input type="color" name="" id="cor">
+            <button onclick="mensagem()">ACEITA</button>
+        </div>
+        </form>
+
+
+        <div id="vota">
+            <label for="art">Artista do seculo:</label>
+            <select  placeholder name="" id="art">
+                <option value=""> Bjork</option>
+                <option value=""> ARca</option>
+                <option value=""> Rosalia</option>
+                <option value=""> Tobyfox</option>
+                <option value=""> Aphex Twink</option>
+                <option value=""> Fka twinks</option>
+                <option value=""> Rachaminoff (ewww) </option>
+                <option value=""> Twenty one pilots</option>
+                <option value=""> T***** S*****</option>
+                <option value=""> Felanie</option>
+                <option value=""> Felanie</option>
+                <option value=""> Felanie</option>
+            
+            </select>
+
+            <label for="soty">Musica do seculo</label>
+            <select name="" id="soty">
+                <option value=""> Hyperballad</option>
+                <option value=""> Prelude in G minor</option>
+                <option value=""> Motomami</option>
+                <option value=""> Fallen Down</option>
+                <option value=""> Fake you out</option>
+                <option value=""> Hyperballad</option>
+                <option value=""> Hyperballad</option>
+                
+            </select>
+
+            
+
+        </div>
+
+
+    </main>
+
+    <script>
+        function mensagem(){
+            alert("usuario cadastrado")
+        }
+    </script>
+</body>
+</html>
