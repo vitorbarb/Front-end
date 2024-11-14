@@ -15,7 +15,7 @@ header{
 }
 
 #tituloCardapio{ 
-    margin-top: 8vh;
+    margin-top: 4vw;
   
     display: flex;
     align: center;
@@ -28,8 +28,10 @@ hr{
 }
 
 #cardapio{
+
+    margin-bottom: 2%;
+    margin-top: 6%;
     width: 100%;
-   
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,3 +57,14 @@ hr{
     object-fit: cover;
 }
 
+
+footer{
+    width: 100%;
+    padding: 20px 0px;
+    background-color: rgb(235, 159, 45);
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
